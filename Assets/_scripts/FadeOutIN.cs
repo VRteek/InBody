@@ -32,7 +32,10 @@ public class FadeOutIN : MonoBehaviour {
 		tt = 0;
 		while (tt < Duration) {
 			tt += Time.deltaTime / Duration;
-			TargetMat.color = new Color (TargetMat.color.r, TargetMat.color.g, TargetMat.color.b, Mathf.Lerp (0, 1, tt / Duration));
+			if (gameObject.name != "FifthQuad") {
+				TargetMat.color = new Color (TargetMat.color.r, TargetMat.color.g,
+				TargetMat.color.b, Mathf.Lerp (0, 1, tt / Duration));
+			}
 			yield return null;
 		}
 	}

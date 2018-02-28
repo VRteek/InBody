@@ -56,9 +56,7 @@ public class Controller : MonoBehaviour {
 		Destroy (ThirdPhase);
 
 		yield return new WaitForSeconds (14);
-		index = "5";
-		url = Application.persistentDataPath + "/Languages/" + Language + "/" + index + ".mp3";
-		StartCoroutine (getVoiceOver (url));
+
 		FifthPhase.SetActive (true);
 		Destroy (ForthPhase);
 	}

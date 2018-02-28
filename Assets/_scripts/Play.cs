@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class Play : MonoBehaviour {
 	public Button button;
 	public Sprite s1, s2;
@@ -9,10 +10,10 @@ public class Play : MonoBehaviour {
 	void Update () {
 		if (audioSource.isPlaying) {
 			button.image.sprite = s2;
-			
+
 		} else {
 			button.image.sprite = s1;
-			
+
 		}
 	}
 	public void Check () {
