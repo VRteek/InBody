@@ -317,7 +317,7 @@ public class Json_Download : MonoBehaviour {
 
 	// when hit plus button browser will be opened to site that the user can add his voice over clips  
 	public void Add_New_Language () {
-		Application.OpenURL ("http://www.vrteek.com/");
+		Application.OpenURL ("https://cube-room.com/apps/in-body-vr");
 	}
 	// when hit cancel button that appeared on Checkcanvas language in progress will be canceled and start download another language
 	public void OnCancelDownload () {
